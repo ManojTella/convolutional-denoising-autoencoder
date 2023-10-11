@@ -22,7 +22,7 @@ Add noise to the images randomly for both the train and test sets.
 ### STEP 4:
 Build the Neural Model using Convolutional, Pooling and Up Sampling layers. Make sure the input shape and output shape of the model are identical.
 ### STEP 5:
-Plot the Ouptput Images.
+Plot the Output Images.
 
 ## PROGRAM
 ```
