@@ -72,7 +72,8 @@ x=layers.UpSampling2D((2,2))(x)
 decoded = layers.Conv2D(1, (3, 3), activation='sigmoid', padding='same')(x)
 
 autoencoder = keras.Model(input_img, decoded)
-autoencoder.summary()autoencoder.compile(optimizer='adam', loss='binary_crossentropy')
+autoencoder.summary()
+autoencoder.compile(optimizer='adam', loss='binary_crossentropy')
 autoencoder.fit(x_train_noisy, x_train_scaled,
                 epochs=2,
                 batch_size=128,
